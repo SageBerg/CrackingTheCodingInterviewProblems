@@ -10,7 +10,6 @@ class Stack(object):
         if (value <= self.mins[-1]):
             self.mins.append(value)
         self.lst.append(value)
-        print self.mins
 
     def pop(self):
         try:
@@ -18,7 +17,6 @@ class Stack(object):
             if value == self.mins[-1]:
                 self.mins = self.mins[0:-1]
             self.lst = self.lst[0:-1]
-            print self.mins
             return value 
         except:
             traceback.print_exc()
