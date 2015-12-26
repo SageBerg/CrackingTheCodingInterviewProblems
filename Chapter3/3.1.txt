@@ -1,0 +1,12 @@
+I would allow stacks 1 and 3 to grow from either end of the array
+stack 2 would start in the middle and grow out in both directions
+the first push to stack 2 would go in the middle of the array, the second would go to the right, the third would go to the left
+pop would be implemented in a similar fashion to push
+push would have to check if there is room in the array to place the data where it needs to
+
+The logic for pushing and popping for stack 2 would be more complex, but I would reason about it like this:
+I would store the length of the stack 2 and use it to figure out where to place or remove the next value
+for example if the length was 10, that would me that next push data would need to placed at
+middle + half length of stack if length
+the next push would place data in the array at middle - half length of stack
+off by one errors and rounding errors might be a problem
