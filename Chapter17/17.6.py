@@ -5,6 +5,8 @@ def find_seq(array):
      location_of_shortest_seq = None
      for i in range(len(array)):
          for j in range(i, len(array)):
+             if j - i > min_sorted_seq_length:
+                 break
              start = array[0:i]
              middle = sorted(array[i:j])
              end = []
