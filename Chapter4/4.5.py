@@ -1,4 +1,3 @@
-import traceback # for inf
 from tree import Node
 
 def is_binary_search_tree(node, min_val, max_val):

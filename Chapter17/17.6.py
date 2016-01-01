@@ -1,5 +1,3 @@
-import traceback
-
 def find_seq(array):
      min_sorted_seq_length = float("inf")
      location_of_shortest_seq = None
